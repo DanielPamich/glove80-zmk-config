@@ -84,9 +84,9 @@
 
         mac_default {
             bindings = <
-&sl 1       &sl 0               &kp C_PLAY_PAUSE  &kp C_STOP      &kp C_FAST_FORWARD                                                                                                &kp C_MUTE         &kp C_VOLUME_DOWN  &kp C_VOL_UP     &none                &none
-&none       &none               &none             &none           &none               &none                                                                                  &none  &none              &none              &none            &kp BSLH             &none
-&none       &kp Q               &kp W             &kp F           &kp P               &kp B                                                                                  &kp J  &kp L              &kp U              &kp Y            &kp LS(UNDER)        &none
+&none       &none               &kp C_PLAY_PAUSE  &kp C_STOP      &kp C_FAST_FORWARD                                                                                                &kp C_MUTE         &kp C_VOLUME_DOWN  &kp C_VOL_UP     &none                &none
+&none       &none               &none             &none           &none               &none                                                                                  &none  &none              &none              &none            &none                &none
+&none       &kp Q               &kp W             &kp F           &kp P               &kp B                                                                                  &kp J  &kp L              &kp U              &kp Y            &kp BACKSLASH        &none
 &none       &mt LEFT_CONTROL A  &mt LEFT_ALT R    &mt LEFT_WIN S  &mt LEFT_SHIFT T    &kp G                                                                                  &kp M  &mt RIGHT_SHIFT N  &mt RIGHT_WIN E    &mt RIGHT_ALT I  &mt RIGHT_CONTROL O  &none
 &none       &kp Z               &kp X             &kp C           &kp D               &kp V  &none        &none      &none      &none          &none        &none            &kp K  &kp H              &kp COMMA          &kp DOT          &kp LS(FSLH)         &none
 &magic 3 0  &none               &none             &none           &none                      &lt 7 SPACE  &lt 8 TAB  &lt 9 ESC  &lt 10 DELETE  &lt 6 ENTER  &lt 5 BACKSPACE         &none              &none              &none            &none                &magic 3 0
@@ -125,7 +125,7 @@
 
         magic_layer {
             bindings = <
-&to 1        &to 0            &none            &none            &none                                                                                     &none  &none  &none  &none  &bt BT_CLR_ALL
+&to 0        &to 1            &to 11           &to 12           &none                                                                                     &none  &none  &none  &none  &bt BT_CLR_ALL
 &none        &none            &none            &none            &none            &none                                                             &none  &none  &none  &none  &none  &bt BT_CLR
 &none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                   &none  &none  &none  &none  &none  &none
 &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none  &none  &none  &none  &none  &bootloader
@@ -149,10 +149,10 @@
             bindings = <
 &trans  &trans     &trans     &trans     &trans                                                                            &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans     &trans     &trans     &trans                                                         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp PG_UP  &kp HOME   &kp UP     &kp END    &kp INS                                                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT  &trans                                                         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(V)  &trans     &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans     &trans     &trans                &kp SPACE  &kp TAB  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &kp PG_UP  &kp HOME   &kp UP     &kp END    &kp PAGE_UP                                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp PAGE_DOWN                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(V)      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans                    &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -169,12 +169,12 @@
 
         layer_Mac_Num_Layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                            &trans  &trans  &trans  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                         &trans     &trans  &trans  &trans  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                         &kp PLUS   &kp N7  &kp N8  &kp N9  &kp STAR   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                         &kp MINUS  &kp N4  &kp N5  &kp N6  &kp FSLH   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans  &kp DOT    &kp N1  &kp N2  &kp N3  &kp EQUAL  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &kp BACKSPACE  &kp N0             &trans  &trans  &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans                                                                               &trans  &trans  &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                            &trans     &trans  &trans  &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                            &kp PLUS   &kp N7  &kp N8  &kp N9  &kp STAR   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                            &kp MINUS  &kp N4  &kp N5  &kp N6  &kp FSLH   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans     &trans  &kp DOT    &kp N1  &kp N2  &kp N3  &kp EQUAL  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &kp BACKSPACE  &kp ENTER  &kp N0             &trans  &trans  &trans  &trans     &trans
             >;
         };
 
@@ -208,6 +208,28 @@
 &trans  &kp PRINTSCREEN       &kp LG(SPACE)   &kp LG(LA(C))      &kp LS(LA(LC(LG(SPACE))))  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LA(SINGLE_QUOTE)  &kp LC(PERIOD)  &kp LA(BACKSLASH)  &kp LG(T)                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans                &trans          &trans             &trans                             &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        pc_uk {
+            bindings = <
+&none       &none               &kp C_PLAY_PAUSE  &kp C_STOP      &kp C_FAST_FORWARD                                                                                                &kp C_MUTE         &kp C_VOLUME_DOWN  &kp C_VOL_UP     &none                &none
+&none       &none               &none             &none           &none               &none                                                                                  &none  &none              &none              &none            &none                &none
+&none       &kp Q               &kp W             &kp F           &kp P               &kp B                                                                                  &kp J  &kp L              &kp U              &kp Y            &kp BACKSLASH        &none
+&none       &mt LEFT_CONTROL A  &mt LEFT_ALT R    &mt LEFT_WIN S  &mt LEFT_SHIFT T    &kp G                                                                                  &kp M  &mt RIGHT_SHIFT N  &mt RIGHT_WIN E    &mt RIGHT_ALT I  &mt RIGHT_CONTROL O  &none
+&none       &kp Z               &kp X             &kp C           &kp D               &kp V  &none        &none      &none      &none          &none        &none            &kp K  &kp H              &kp COMMA          &kp DOT          &kp LS(FSLH)         &none
+&magic 3 0  &none               &none             &none           &none                      &lt 7 SPACE  &lt 8 TAB  &lt 9 ESC  &lt 10 DELETE  &lt 6 ENTER  &lt 5 BACKSPACE         &none              &none              &none            &none                &magic 3 0
+            >;
+        };
+
+        pc_us {
+            bindings = <
+&none       &none               &kp C_PLAY_PAUSE  &kp C_STOP      &kp C_FAST_FORWARD                                                                                                &kp C_MUTE         &kp C_VOLUME_DOWN  &kp C_VOL_UP     &none                &none
+&none       &none               &none             &none           &none               &none                                                                                  &none  &none              &none              &none            &none                &none
+&none       &kp Q               &kp W             &kp F           &kp P               &kp B                                                                                  &kp J  &kp L              &kp U              &kp Y            &kp BACKSLASH        &none
+&none       &mt LEFT_CONTROL A  &mt LEFT_ALT R    &mt LEFT_WIN S  &mt LEFT_SHIFT T    &kp G                                                                                  &kp M  &mt RIGHT_SHIFT N  &mt RIGHT_WIN E    &mt RIGHT_ALT I  &mt RIGHT_CONTROL O  &none
+&none       &kp Z               &kp X             &kp C           &kp D               &kp V  &none        &none      &none      &none          &none        &none            &kp K  &kp H              &kp COMMA          &kp DOT          &kp LS(FSLH)         &none
+&magic 3 0  &none               &none             &none           &none                      &lt 7 SPACE  &lt 8 TAB  &lt 9 ESC  &lt 10 DELETE  &lt 6 ENTER  &lt 5 BACKSPACE         &none              &none              &none            &none                &magic 3 0
             >;
         };
     };
