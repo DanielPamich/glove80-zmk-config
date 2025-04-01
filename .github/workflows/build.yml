@@ -11,15 +11,15 @@ jobs:
           submodules: recursive
       - uses: actions/checkout@v4
         with:
-          repository: moergo-sc/zmk
-          ref: main
+          repository: darknao/zmk
+          ref: rgb-layer-24.12
           path: src
       - uses: cachix/install-nix-action@v25
         with:
           nix_path: nixpkgs=channel:nixos-22.05
       - uses: cachix/cachix-action@v14
         with:
-          name: moergo-glove80-zmk-dev
+          name: moergo-glove80-zmk-darknao-rgb
           skipPush: true
       - name: Build Glove80 combined firmware
         run: nix-build config -o combined
