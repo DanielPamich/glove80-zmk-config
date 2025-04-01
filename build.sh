@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-IMAGE=glove80-zmk-config-docker
+IMAGE=glove80-zmk-config-docker-rgb
 BRANCH="${1:-main}"
 
 docker build -t "$IMAGE" .
