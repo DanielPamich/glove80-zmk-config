@@ -4,12 +4,12 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/zmk/rgb_colors.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
-#include <dt-bindings/zmk/rgb_colors.h>
 
 #define HYPER LC(LS(LG(LALT)))
 
@@ -258,12 +258,12 @@
 
         pc_uk_symbols {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                     &trans      &trans             &trans         &trans             &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans     &trans      &trans             &trans         &trans             &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp GRAVE  &kp AMPS    &kp ASTRK          &kp HASH       &kp UNDER          &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp TILDE  &kp DOLLAR  &kp PERCENT        &kp CARET      &kp PLUS           &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PIPE   &kp EXCL    &kp DOUBLE_QUOTES  &kp BACKSLASH  &kp LS(BACKSLASH)  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans             &trans      &trans             &trans         &trans             &trans
+&trans  &trans  &trans  &trans  &trans                                                                            &trans      &trans             &trans         &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                         &trans     &trans      &trans             &trans         &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                         &kp GRAVE  &kp AMPS    &kp ASTRK          &kp HASH       &kp UNDER          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                         &kp TILDE  &kp DOLLAR  &kp PERCENT        &kp CARET      &kp PLUS           &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &kp PIPE   &kp EXCL    &kp DOUBLE_QUOTES  &kp BACKSLASH  &kp LS(BACKSLASH)  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &kp BACKSPACE             &trans      &trans             &trans         &trans             &trans
             >;
         };
 
@@ -366,8 +366,9 @@
             >;
         };
     };
- underglow-layer {
-        compatible  = "zmk,underglow-layer";
+
+    underglow-layer {
+        compatible = "zmk,underglow-layer";
 
         base {
             bindings = <
@@ -377,9 +378,11 @@
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                            &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
-                >;
+            >;
+
             layer-id = <LAYER_Base>;
         };
+
         layers {
             bindings = <
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                                                    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
@@ -388,9 +391,11 @@
                 &ug WHITE   &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug WHITE                                                                            &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug GREEN   &ug GREEN   &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
-                >;
+            >;
+
             layer-id = <LAYER_Layers>;
         };
+
         wrap {
             bindings = <
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                                                    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
@@ -399,9 +404,11 @@
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                            &ug WHITE   &ug GREEN   &ug YELLOW  &ug GREEN   &ug WHITE   &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug RED     &ug YELLOW  &ug RED     &ug WHITE   &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
-                >;
+            >;
+
             layer-id = <LAYER_Wrap>;
         };
+
         equal {
             bindings = <
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                                                    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
@@ -410,9 +417,11 @@
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                            &ug WHITE   &ug BLUE    &ug GREEN   &ug BLUE    &ug WHITE   &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug RED     &ug GREEN   &ug RED     &ug WHITE   &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
-                >;
+            >;
+
             layer-id = <LAYER_Equal>;
         };
+
         arrow {
             bindings = <
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                                                    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
@@ -421,9 +430,11 @@
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                            &ug BLUE    &ug YELLOW  &ug YELLOW  &ug YELLOW  &ug WHITE   &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug GREEN   &ug RED     &ug GREEN   &ug WHITE   &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug RED     &ug WHITE   &ug WHITE   &ug WHITE
-                >;
+            >;
+
             layer-id = <LAYER_Arrow>;
         };
+
         radio {
             bindings = <
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                                                    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
@@ -432,9 +443,11 @@
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                            &ug WHITE   &ug RED     &ug YELLOW  &ug RED     &ug WHITE   &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
-                >;
+            >;
+
             layer-id = <LAYER_Radio>;
         };
+
         volume {
             bindings = <
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                                                    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
@@ -443,9 +456,11 @@
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                            &ug WHITE   &ug BLUE    &ug YELLOW  &ug BLUE    &ug WHITE   &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
-                >;
+            >;
+
             layer-id = <LAYER_Volume>;
         };
+
         magic {
             bindings = <
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                                                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug BLUE
@@ -454,9 +469,11 @@
                 &ug BLUE    &ug BLUE    &ug GREEN   &ug BLUE    &ug GREEN   &ug BLUE                                                                          &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug BLUE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug BLUE   &ug BLUE   &ug BLUE    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug BLUE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE               &ug BLUE   &ug BLUE   &ug BLUE    &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
-                >;
+            >;
+
             layer-id = <LAYER_Magic>;
         };
+
         deci {
             bindings = <
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                                                    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
@@ -465,9 +482,11 @@
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                            &ug WHITE   &ug GREEN   &ug GREEN   &ug GREEN   &ug WHITE   &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug GREEN   &ug GREEN   &ug GREEN   &ug WHITE   &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug GREEN   &ug WHITE   &ug WHITE   &ug WHITE
-                >;
+            >;
+
             layer-id = <LAYER_Deci>;
         };
+
         fn {
             bindings = <
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                                                    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
@@ -476,9 +495,11 @@
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                            &ug WHITE   &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
-                >;
+            >;
+
             layer-id = <LAYER_Fn>;
         };
+
         special {
             bindings = <
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                                                    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
@@ -487,9 +508,11 @@
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                            &ug WHITE   &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
-                >;
+            >;
+
             layer-id = <LAYER_Special>;
         };
+
         brightness {
             bindings = <
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                                                    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
@@ -498,9 +521,11 @@
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                            &ug WHITE   &ug BLUE    &ug PINK    &ug BLUE    &ug WHITE   &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
-                >;
+            >;
+
             layer-id = <LAYER_Brightness>;
         };
+
         mouse {
             bindings = <
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                                                    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
@@ -509,9 +534,11 @@
                 &ug WHITE   &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug WHITE                                                                            &ug WHITE   &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug WHITE
                 &ug WHITE   &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE               &ug BLUE    &ug BLUE    &ug BLUE     &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
-                >;
+            >;
+
             layer-id = <LAYER_Mouse>;
         };
+
         scroll {
             bindings = <
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                                                    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
@@ -520,7 +547,8 @@
                 &ug WHITE   &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug WHITE                                                                            &ug WHITE   &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug WHITE
                 &ug WHITE   &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug WHITE
                 &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
-                >;
+            >;
+
             layer-id = <LAYER_Scroll>;
         };
     };
