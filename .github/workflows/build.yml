@@ -19,7 +19,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-22.05
       - uses: cachix/cachix-action@v14
         with:
-          name: moergo-glove80-zmk-darknao-rgb
+          name: moergo-glove80-zmk-dev
           skipPush: true
       - name: Build Glove80 combined firmware
         run: nix-build config -o combined
