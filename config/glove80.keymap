@@ -14,11 +14,11 @@
 #define HYPER LC(LS(LG(LALT)))
 
 // layers
-
-#define DEFAULT 0
-#define LOWER 1
-#define MAGIC 2
-#define FACTORY_TEST 3
+#define MAC_DEFAULT 0
+#define DEFAULT 1
+#define LOWER 2
+#define MAGIC 3
+#define FACTORY_TEST 4
 
 / {
     behaviors {
