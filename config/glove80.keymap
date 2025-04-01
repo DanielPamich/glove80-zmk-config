@@ -372,12 +372,12 @@
 
         base {
             bindings = <
-                &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                                                    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
-                &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                            &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
-                &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                            &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
-                &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                            &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
-                &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
-                &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
+                &ug ___   &ug ___     &ug ___     &ug ___     &ug ___                                                                                                      &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug ___   &ug ___     &ug ___     &ug ___     &ug ___   &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug ___   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                            &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug ___
+                &ug ___   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                            &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug ___
+                &ug ___   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___     &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug ___
+                &ug GOLD  &ug ___     &ug ___     &ug ___     &ug ___                 &ug WHITE   &ug WHITE   &ug WHITE    &ug RED     &ug GREEN   &ug RED                 &ug ___     &ug ___     &ug ___     &ug ___     &ug GOLD
             >;
 
             layer-id = <DEFAULT>;
@@ -385,12 +385,12 @@
 
         layers {
             bindings = <
-                &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                                                    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
-                &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                            &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
-                &ug WHITE   &ug WHITE   &ug GREEN   &ug GREEN   &ug GREEN   &ug WHITE                                                                            &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
-                &ug WHITE   &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug WHITE                                                                            &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
-                &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug GREEN   &ug GREEN   &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
-                &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE    &ug WHITE   &ug WHITE   &ug WHITE               &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE
+                &ug ___   &ug ___     &ug ___     &ug ___     &ug ___                                                                                                      &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug ___   &ug ___     &ug ___     &ug ___     &ug ___   &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug ___   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                            &ug GREEN   &ug BLUE    &ug BLUE    &ug BLUE    &ug GREEN   &ug ___
+                &ug ___   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                            &ug GREEN   &ug BLUE    &ug BLUE    &ug BLUE    &ug GREEN   &ug ___
+                &ug ___   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___     &ug GREEN   &ug BLUE    &ug BLUE    &ug BLUE    &ug WHITE   &ug ___
+                &ug GOLD  &ug ___     &ug ___     &ug ___     &ug ___                 &ug WHITE   &ug WHITE   &ug WHITE    &ug RED     &ug WHITE   &ug BLUE                &ug ___     &ug ___     &ug ___     &ug ___     &ug GOLD
             >;
 
             layer-id = <LOWER>;
