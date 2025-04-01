@@ -5,11 +5,11 @@ ENV PATH=/root/.nix-profile/bin:/usr/bin:/bin
 RUN <<EOF
     set -euo pipefail
     nix-env -iA cachix -f https://cachix.org/api/v1/install
-    cachix use moergo-glove80-zmk-dev
+    cachix use moergo-glove80-zmk-dev-rgb-layer-24-12
     mkdir /config
     # Mirror ZMK repository to make it easier to reference both branches and
     # tags without remote namespacing
-    git clone --mirror https://github.com/moergo-sc/zmk /zmk
+    git clone --mirror https://github.com/darknao/zmk /zmk
     GIT_DIR=/zmk git worktree add --detach /src
 EOF
 
