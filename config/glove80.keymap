@@ -133,12 +133,12 @@
 
         magic_layer {
             bindings = <
-&to 0         &to 11           &to 18           &none            &to 1                                                                                     &none  &none  &none  &none  &bt BT_CLR_ALL
-&out OUT_USB  &bt_0            &bt_1            &bt_2            &bt_3            &none                                                             &none  &none  &none  &none  &none  &bt BT_CLR
-&none         &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                   &none  &none  &none  &none  &none  &none
-&bootloader   &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none  &none  &none  &none  &none  &bootloader
-&sys_reset    &none            &none            &none            &none            &none            &bt_2  &bt_3  &none         &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
-&none         &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none         &none  &none  &none  &none  &none
+&none        &none            &none            &none            &none                                                                                     &none  &none  &none  &none  &bt BT_CLR_ALL
+&none        &to 0            &to 11           &to 18           &bt_3            &none                                                             &none  &none  &none  &none  &to 1  &bt BT_CLR
+&none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                   &none  &none  &none  &none  &none  &none
+&bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none  &none  &none  &none  &none  &bootloader
+&sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none         &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
+&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
 
@@ -403,7 +403,7 @@
             layer-id = <LOWER>;
         };
 
-       mAGIC {
+        mAGIC {
             bindings = <
                 &ug BLUE   &ug GREEN   &ug RED     &ug ___      &ug GOLD                                                                                                           &ug ___     &ug ___     &ug ___     &ug ___     &ug RED
                 &ug TEAL   &ug BLUE    &ug BLUE    &ug BLUE     &ug BLUE      &ug ___                                                                                  &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug PINK
@@ -415,6 +415,7 @@
 
             layer-id = <MAGIC>;
         };
+
         mac_Nav {
             bindings = <
                 &ug BLUE  &ug ___     &ug ___     &ug ___     &ug ___                                                                                                       &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
@@ -428,7 +429,7 @@
             layer-id = <MAC_Nav>;
         };
 
-      mac_Coding {
+        mac_Coding {
             bindings = <
                 &ug BLUE  &ug ___     &ug ___     &ug ___      &ug ___                                                                                                        &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
                 &ug ___   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
@@ -441,7 +442,7 @@
             layer-id = <MAC_Coding>;
         };
 
-      mac_Macros {
+        mac_Macros {
             bindings = <
                 &ug BLUE  &ug ___     &ug ___     &ug ___      &ug ___                                                                                                        &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
                 &ug ___   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
@@ -454,7 +455,7 @@
             layer-id = <MAC_Macros>;
         };
 
-      mac_Num {
+        mac_Num {
             bindings = <
                 &ug BLUE  &ug ___     &ug ___     &ug ___      &ug ___                                                                                                        &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
                 &ug ___   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
@@ -467,7 +468,7 @@
             layer-id = <MAC_Num>;
         };
 
-      mac_Symbols {
+        mac_Symbols {
             bindings = <
                 &ug BLUE  &ug ___     &ug ___     &ug ___      &ug ___                                                                                                        &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
                 &ug ___   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
@@ -480,7 +481,7 @@
             layer-id = <MAC_Symbols>;
         };
 
-      mac_Functions {
+        mac_Functions {
             bindings = <
                 &ug BLUE  &ug ___     &ug ___     &ug ___      &ug ___                                                                                                        &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
                 &ug ___   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
@@ -492,6 +493,5 @@
 
             layer-id = <MAC_Functions>;
         };
- 
     };
 };
