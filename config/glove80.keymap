@@ -199,12 +199,12 @@
 
         layer_Mac_Funtions {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                           &trans  &trans  &trans  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans           &trans  &trans  &trans  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp PRINTSCREEN  &kp F7  &kp F8  &kp F9  &kp F12  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp SCROLLLOCK   &kp F4  &kp F5  &kp F6  &kp F11  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PAUSE_BREAK  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans                   &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &none   &kp F7  &kp F8  &kp F9  &kp F12  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &none   &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none   &kp F1  &kp F2  &kp F3  &kp F10  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans   &trans
             >;
         };
 
@@ -379,11 +379,11 @@
 
         base {
             bindings = <
-                &ug ___   &ug ___     &ug ___     &ug ___     &ug ___                                                                                                      &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug BLUE  &ug ___     &ug ___     &ug ___     &ug ___                                                                                                      &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
                 &ug ___   &ug ___     &ug ___     &ug ___     &ug ___   &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug ___   &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE                                                                             &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug GREEN   &ug ___
                 &ug ___   &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE                                                                             &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug ___
-                &ug ___   &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE                                                                             &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug ___
-                &ug ___   &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___     &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug ___
+                &ug ___   &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___     &ug BLUE    &ug BLUE    &ug GREEN   &ug GREEN   &ug GREEN   &ug ___
                 &ug GOLD  &ug ___     &ug ___     &ug ___     &ug ___                 &ug WHITE   &ug WHITE   &ug WHITE    &ug RED     &ug GREEN   &ug RED                 &ug ___     &ug ___     &ug ___     &ug ___     &ug GOLD
             >;
 
@@ -403,12 +403,24 @@
             layer-id = <LOWER>;
         };
 
+       mAGIC {
+            bindings = <
+                &ug BLUE   &ug GREEN   &ug RED     &ug ___      &ug GOLD                                                                                                           &ug ___     &ug ___     &ug ___     &ug ___     &ug RED
+                &ug TEAL   &ug BLUE    &ug BLUE    &ug BLUE     &ug BLUE      &ug ___                                                                                  &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug PINK
+                &ug ___    &ug GREEN   &ug ORANGE  &ug GOLD     &ug WHITE     &ug GREEN                                                                                &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug RED    &ug GREEN   &ug ORANGE  &ug GOLD     &ug WHITE     &ug ___                                                                                  &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug RED
+                &ug PURPLE &ug ___     &ug ___     &ug ___      &ug PURPLE    &ug ___     &ug BLUE     &ug BLUE    &ug ___      &ug ___     &ug ___     &ug ___        &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug PURPLE
+                &ug ___    &ug ___     &ug ___     &ug ___      &ug ___                   &ug BLUE     &ug BLUE    &ug TEAL     &ug ___     &ug ___     &ug ___                    &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+            >;
+
+            layer-id = <MAGIC>;
+        };
         mac_Nav {
             bindings = <
-                &ug ___   &ug ___     &ug ___     &ug ___     &ug ___                                                                                                    &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug BLUE  &ug ___     &ug ___     &ug ___     &ug ___                                                                                                    &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
                 &ug ___   &ug ___     &ug ___     &ug ___     &ug ___   &ug ___                                                                                &ug ___   &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
                 &ug ___   &ug GREEN   &ug PURPLE   &ug BLUE    &ug PURPLE   &ug GREEN                                                                          &ug ___   &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
-                &ug ___   &ug GREEN   &ug BLUE    &ug BLUE    &ug BLUE    &ug GREEN                                                                            &ug ___   &ug BLUE    &ug BLUE    &ug ___     &ug BLUE    &ug ___
+                &ug ___   &ug GREEN   &ug BLUE    &ug BLUE    &ug BLUE    &ug GREEN                                                                            &ug ___   &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug ___
                 &ug ___   &ug TEAL   &ug TEAL   &ug TEAL   &ug TEAL   &ug TEAL   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___          &ug ___   &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
                 &ug ___  &ug ___     &ug ___     &ug ___     &ug ___                 &ug WHITE   &ug WHITE   &ug WHITE    &ug ___     &ug ___   &ug ___                  &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
             >;
@@ -418,10 +430,10 @@
 
       mac_Coding {
             bindings = <
-                &ug ___   &ug ___     &ug ___     &ug ___      &ug ___                                                                                                        &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug BLUE  &ug ___     &ug ___     &ug ___      &ug ___                                                                                                        &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
                 &ug ___   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
                 &ug ___   &ug TEAL    &ug TEAL    &ug TEAL     &ug TEAL    &ug TEAL                                                                               &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
-                &ug ___   &ug GREEN   &ug BLUE    &ug PURPLE   &ug YELLOW  &ug RED                                                                                &ug ___     &ug BLUE    &ug BLUE    &ug ___     &ug BLUE    &ug ___
+                &ug ___   &ug GREEN   &ug BLUE    &ug PURPLE   &ug YELLOW  &ug RED                                                                                &ug ___     &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug ___
                 &ug ___   &ug GREEN   &ug BLUE    &ug PURPLE   &ug YELLOW  &ug RED     &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___       &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
                 &ug ___   &ug ___     &ug ___     &ug ___      &ug ___                 &ug WHITE   &ug WHITE   &ug WHITE    &ug ___     &ug ___    &ug ___                    &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
             >;
@@ -431,10 +443,10 @@
 
       mac_Macros {
             bindings = <
-                &ug ___   &ug ___     &ug ___     &ug ___      &ug ___                                                                                                        &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug BLUE  &ug ___     &ug ___     &ug ___      &ug ___                                                                                                        &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
                 &ug ___   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
                 &ug ___   &ug GREEN   &ug ___     &ug ___      &ug ___     &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
-                &ug ___   &ug GREEN   &ug BLUE    &ug TEAL     &ug BLUE    &ug ___                                                                                &ug ___     &ug BLUE    &ug BLUE    &ug ___     &ug BLUE    &ug ___
+                &ug ___   &ug GREEN   &ug BLUE    &ug TEAL     &ug BLUE    &ug ___                                                                                &ug ___     &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug ___
                 &ug ___   &ug PURPLE  &ug PURPLE  &ug PURPLE   &ug PURPLE  &ug ___     &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___       &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
                 &ug ___   &ug ___     &ug ___     &ug ___      &ug ___                 &ug WHITE   &ug WHITE   &ug WHITE    &ug ___     &ug ___    &ug ___                    &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
             >;
@@ -442,5 +454,44 @@
             layer-id = <MAC_Macros>;
         };
 
+      mac_Num {
+            bindings = <
+                &ug BLUE  &ug ___     &ug ___     &ug ___      &ug ___                                                                                                        &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug ___   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug ___   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___                                                                                &ug GREEN   &ug BLUE    &ug BLUE    &ug BLUE    &ug GREEN   &ug ___
+                &ug ___   &ug BLUE    &ug BLUE    &ug BLUE     &ug BLUE    &ug ___                                                                                &ug GREEN   &ug BLUE    &ug BLUE    &ug BLUE    &ug GREEN   &ug ___
+                &ug ___   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___       &ug TEAL    &ug BLUE    &ug BLUE    &ug BLUE    &ug TEAL    &ug ___
+                &ug ___   &ug ___     &ug ___     &ug ___      &ug ___                 &ug ___     &ug ___     &ug ___      &ug RED     &ug GREEN   &ug BLUE                  &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+            >;
+
+            layer-id = <MAC_Num>;
+        };
+
+      mac_Symbols {
+            bindings = <
+                &ug BLUE  &ug ___     &ug ___     &ug ___      &ug ___                                                                                                        &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug ___   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug ___   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___                                                                                &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug ___
+                &ug ___   &ug BLUE    &ug BLUE    &ug BLUE     &ug BLUE    &ug ___                                                                                &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug ___
+                &ug ___   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___       &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN    &ug ___
+                &ug ___   &ug ___     &ug ___     &ug ___      &ug ___                 &ug ___     &ug ___     &ug ___      &ug RED     &ug GREEN   &ug BLUE                  &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+            >;
+
+            layer-id = <MAC_Symbols>;
+        };
+
+      mac_Functions {
+            bindings = <
+                &ug BLUE  &ug ___     &ug ___     &ug ___      &ug ___                                                                                                        &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug ___   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug ___   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___                                                                                &ug ___     &ug BLUE    &ug BLUE    &ug BLUE    &ug TEAL    &ug ___
+                &ug ___   &ug BLUE    &ug BLUE    &ug BLUE     &ug BLUE    &ug ___                                                                                &ug ___     &ug BLUE    &ug BLUE    &ug BLUE    &ug TEAL    &ug ___
+                &ug ___   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___       &ug ___     &ug BLUE    &ug BLUE    &ug BLUE    &ug TEAL    &ug ___
+                &ug ___   &ug ___     &ug ___     &ug ___      &ug ___                 &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___                   &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+            >;
+
+            layer-id = <MAC_Functions>;
+        };
+ 
     };
 };
