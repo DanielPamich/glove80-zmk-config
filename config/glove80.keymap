@@ -384,7 +384,7 @@
                 &ug ___   &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE                                                                             &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug GREEN   &ug ___
                 &ug ___   &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE                                                                             &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug ___
                 &ug ___   &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___     &ug BLUE    &ug BLUE    &ug GREEN   &ug GREEN   &ug GREEN   &ug ___
-                &ug GOLD  &ug ___     &ug ___     &ug ___     &ug ___                 &ug WHITE   &ug WHITE   &ug WHITE    &ug RED     &ug GREEN   &ug RED                 &ug ___     &ug ___     &ug ___     &ug ___     &ug GOLD
+                &ug GOLD  &ug ___     &ug ___     &ug ___     &ug ___                 &ug WHITE   &ug YELLOW  &ug PINK     &ug PINK    &ug GREEN   &ug RED                 &ug ___     &ug ___     &ug ___     &ug ___     &ug GOLD
             >;
 
             layer-id = <MAC_DEFAULT>;
@@ -417,12 +417,12 @@
         };
         mac_Nav {
             bindings = <
-                &ug BLUE  &ug ___     &ug ___     &ug ___     &ug ___                                                                                                    &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
-                &ug ___   &ug ___     &ug ___     &ug ___     &ug ___   &ug ___                                                                                &ug ___   &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
-                &ug ___   &ug GREEN   &ug PURPLE   &ug BLUE    &ug PURPLE   &ug GREEN                                                                          &ug ___   &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
-                &ug ___   &ug GREEN   &ug BLUE    &ug BLUE    &ug BLUE    &ug GREEN                                                                            &ug ___   &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug ___
-                &ug ___   &ug TEAL   &ug TEAL   &ug TEAL   &ug TEAL   &ug TEAL   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___          &ug ___   &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
-                &ug ___  &ug ___     &ug ___     &ug ___     &ug ___                 &ug WHITE   &ug WHITE   &ug WHITE    &ug ___     &ug ___   &ug ___                  &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug BLUE  &ug ___     &ug ___     &ug ___     &ug ___                                                                                                       &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug ___   &ug ___     &ug ___     &ug ___     &ug ___     &ug ___                                                                                 &ug ___   &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug ___   &ug GREEN   &ug PURPLE  &ug BLUE    &ug PURPLE  &ug GREEN                                                                               &ug ___   &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug ___   &ug GREEN   &ug BLUE    &ug BLUE    &ug BLUE    &ug GREEN                                                                               &ug ___   &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug ___
+                &ug ___   &ug TEAL    &ug TEAL    &ug TEAL    &ug TEAL    &ug TEAL    &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___        &ug ___   &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug ___   &ug ___     &ug ___     &ug ___     &ug ___                 &ug WHITE   &ug YELLOW   &ug PINK    &ug ___     &ug ___   &ug ___                    &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
             >;
 
             layer-id = <MAC_Nav>;
@@ -435,7 +435,7 @@
                 &ug ___   &ug TEAL    &ug TEAL    &ug TEAL     &ug TEAL    &ug TEAL                                                                               &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
                 &ug ___   &ug GREEN   &ug BLUE    &ug PURPLE   &ug YELLOW  &ug RED                                                                                &ug ___     &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug ___
                 &ug ___   &ug GREEN   &ug BLUE    &ug PURPLE   &ug YELLOW  &ug RED     &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___       &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
-                &ug ___   &ug ___     &ug ___     &ug ___      &ug ___                 &ug WHITE   &ug WHITE   &ug WHITE    &ug ___     &ug ___    &ug ___                    &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug ___   &ug ___     &ug ___     &ug ___      &ug ___                 &ug WHITE   &ug YELLOW  &ug PINK     &ug ___     &ug ___    &ug ___                    &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
             >;
 
             layer-id = <MAC_Coding>;
@@ -448,7 +448,7 @@
                 &ug ___   &ug GREEN   &ug ___     &ug ___      &ug ___     &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
                 &ug ___   &ug GREEN   &ug BLUE    &ug TEAL     &ug BLUE    &ug ___                                                                                &ug ___     &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug ___
                 &ug ___   &ug PURPLE  &ug PURPLE  &ug PURPLE   &ug PURPLE  &ug ___     &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___       &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
-                &ug ___   &ug ___     &ug ___     &ug ___      &ug ___                 &ug WHITE   &ug WHITE   &ug WHITE    &ug ___     &ug ___    &ug ___                    &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug ___   &ug ___     &ug ___     &ug ___      &ug ___                 &ug WHITE   &ug YELLOW  &ug PINK     &ug ___     &ug ___     &ug ___                   &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
             >;
 
             layer-id = <MAC_Macros>;
@@ -474,7 +474,7 @@
                 &ug ___   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___                                                                                &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug ___
                 &ug ___   &ug BLUE    &ug BLUE    &ug BLUE     &ug BLUE    &ug ___                                                                                &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug ___
                 &ug ___   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___       &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN    &ug ___
-                &ug ___   &ug ___     &ug ___     &ug ___      &ug ___                 &ug ___     &ug ___     &ug ___      &ug RED     &ug GREEN   &ug BLUE                  &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug ___   &ug ___     &ug ___     &ug ___      &ug ___                 &ug ___     &ug ___     &ug ___      &ug PINK    &ug GREEN   &ug RED                   &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
             >;
 
             layer-id = <MAC_Symbols>;
@@ -487,7 +487,7 @@
                 &ug ___   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___                                                                                &ug ___     &ug BLUE    &ug BLUE    &ug BLUE    &ug TEAL    &ug ___
                 &ug ___   &ug BLUE    &ug BLUE    &ug BLUE     &ug BLUE    &ug ___                                                                                &ug ___     &ug BLUE    &ug BLUE    &ug BLUE    &ug TEAL    &ug ___
                 &ug ___   &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___       &ug ___     &ug BLUE    &ug BLUE    &ug BLUE    &ug TEAL    &ug ___
-                &ug ___   &ug ___     &ug ___     &ug ___      &ug ___                 &ug ___     &ug ___     &ug ___      &ug ___     &ug ___     &ug ___                   &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug ___   &ug ___     &ug ___     &ug ___      &ug ___                 &ug ___     &ug ___     &ug ___      &ug PINK    &ug GREEN   &ug RED                   &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
             >;
 
             layer-id = <MAC_Functions>;
