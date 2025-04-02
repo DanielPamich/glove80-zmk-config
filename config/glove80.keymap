@@ -373,7 +373,7 @@
 
         base {
             bindings = <
-                &ug ___   &ug ___     &ug ___     &ug ___     &ug ___                                                                                                      &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
+                &ug ___   &ug ___     &ug ___     &ug ___     &ug ___                                                                                                      &ug ___     &ug ___     &ug ___     &ug ___     &ug RED
                 &ug ___   &ug ___     &ug ___     &ug ___     &ug ___   &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
                 &ug ___   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                            &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug ___
                 &ug ___   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE                                                                            &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug WHITE   &ug ___
@@ -381,7 +381,7 @@
                 &ug GOLD  &ug ___     &ug ___     &ug ___     &ug ___                 &ug WHITE   &ug WHITE   &ug WHITE    &ug RED     &ug GREEN   &ug RED                 &ug ___     &ug ___     &ug ___     &ug ___     &ug GOLD
             >;
 
-            layer-id = <DEFAULT>;
+            layer-id = <MAC_DEFAULT>;
         };
 
         layers {
