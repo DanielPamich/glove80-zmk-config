@@ -433,7 +433,7 @@
         mAGIC {
             bindings = <
                 &ug ___    &ug ___     &ug RED     &ug ___      &ug ___                                                                                                            &ug ___     &ug ___     &ug ___     &ug ___     &ug RED
-                &ug BLUE   &ug GREEN   &ug RED     &ug GOLD     &ug ___       &ug ___                                                                                  &ug ___     &ug ___     &ug ___     &ug ___     &ug     &ug PINK
+                &ug BLUE   &ug GREEN   &ug RED     &ug GOLD     &ug ___       &ug ___                                                                                  &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug PINK
                 &ug ___    &ug GREEN   &ug ORANGE  &ug GOLD     &ug WHITE     &ug GREEN                                                                                &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
                 &ug RED    &ug GREEN   &ug ORANGE  &ug GOLD     &ug WHITE     &ug ___                                                                                  &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug RED
                 &ug PURPLE &ug ___     &ug ___     &ug ___      &ug PURPLE    &ug ___     &ug BLUE     &ug BLUE    &ug ___      &ug ___     &ug ___     &ug ___        &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug PURPLE
