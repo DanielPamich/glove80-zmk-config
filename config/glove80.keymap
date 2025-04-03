@@ -17,23 +17,25 @@
 
 #define MAC_DEFAULT 0
 #define DEFAULT 1
-#define LOWER 2
-#define MAGIC 3
+#define UK_DEFAULT 3
+#define US_DEFAULT 2
+#define LOWER 4
+#define MAGIC 5
 #define FACTORY_TEST 4
-#define MAC_Nav 5
-#define MAC_Coding 6
-#define MAC_Num 7
-#define MAC_Symbols 8
-#define MAC_Functions 9
-#define MAC_Macros 10
-#define UK_DEFAULT 11
-#define UK_Nav 12
-#define UK_Coding 13
-#define UK_Num 14
-#define UK_Symbols 15
-#define UK_Functions 16
-#define UK_Macros 17
-#define US_DEFAULT 18
+#define MAC_Nav 7
+#define MAC_Coding 8
+#define MAC_Num 9
+#define MAC_Symbols 10
+#define MAC_Functions 11
+#define MAC_Macros 12
+
+#define UK_Nav 13
+#define UK_Coding 14
+#define UK_Num 15
+#define UK_Symbols 16
+#define UK_Functions 17
+#define UK_Macros 18
+
 #define US_Nav 19
 #define US_Coding 20
 #define US_Num 21
@@ -393,7 +395,7 @@
 
         base {
             bindings = <
-                &ug ___   &ug ___     &ug GREEN   &ug PINK    &ug BLUE                                                                                                     &ug PINK    &ug TEAL    &ug BLUE    &ug ___     &ug ___
+                &ug ___   &ug ___     &ug GREEN   &ug PINK    &ug BLUE                                                                                                     &ug PINK    &ug TEAL    &ug BLUE    &ug ___     &ug WHITE
                 &ug ___   &ug BLUE    &ug ___     &ug ___     &ug ___   &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
                 &ug ___   &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE                                                                             &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug GREEN   &ug ___
                 &ug ___   &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE                                                                             &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug BLUE    &ug ___
@@ -523,7 +525,7 @@
 
         uk_DEFAULT {
             bindings = <
-                &ug ___   &ug ___     &ug GREEN   &ug PINK    &ug BLUE                                                                                                     &ug PINK    &ug TEAL    &ug BLUE    &ug ___     &ug ___
+                &ug BLUE   &ug ___     &ug GREEN   &ug PINK    &ug BLUE                                                                                                     &ug PINK    &ug TEAL    &ug BLUE    &ug ___     &ug ___
                 &ug ___   &ug ___     &ug GREEN   &ug ___     &ug ___   &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
                 &ug ___   &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN                                                                            &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug ___
                 &ug ___   &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN                                                                            &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug GREEN   &ug ___
@@ -614,7 +616,7 @@
 
         us_DEFAULT {
             bindings = <
-                &ug ___   &ug ___     &ug GREEN   &ug PINK    &ug BLUE                                                                                                     &ug PINK    &ug TEAL    &ug BLUE    &ug ___     &ug ___
+                &ug BLUE   &ug ___     &ug GREEN   &ug PINK    &ug BLUE                                                                                                     &ug PINK    &ug TEAL    &ug BLUE    &ug ___     &ug ___
                 &ug ___   &ug ___     &ug ___     &ug RED     &ug ___   &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___     &ug ___     &ug ___
                 &ug ___   &ug RED     &ug RED     &ug RED     &ug RED   &ug RED                                                                                &ug RED     &ug RED     &ug RED     &ug RED     &ug RED     &ug ___
                 &ug ___   &ug RED     &ug RED     &ug RED     &ug RED   &ug RED                                                                                &ug RED     &ug RED     &ug RED     &ug RED     &ug RED     &ug ___
