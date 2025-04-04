@@ -110,7 +110,7 @@
 &none       &none               &none             &none           &none               &none                                                                                    &none  &none              &none              &none            &none                &none
 &none       &kp Q               &kp W             &kp F           &kp P               &kp B                                                                                    &kp J  &kp L              &kp U              &kp Y            &kp LS(SLASH)        &none
 &none       &mt LEFT_CONTROL A  &mt LEFT_ALT R    &mt LEFT_WIN S  &mt LEFT_SHIFT T    &kp G                                                                                    &kp M  &mt RIGHT_SHIFT N  &mt RIGHT_WIN E    &mt RIGHT_ALT I  &mt RIGHT_CONTROL O  &none
-&none       &kp Z               &kp X             &kp C           &kp D               &kp V  &none        &none       &none       &none          &none        &none            &kp K  &kp H              &kp LEFT_WIN       &kp COMMA        &kp LS(FSLH)         &none
+&none       &kp Z               &kp X             &kp C           &kp D               &kp V  &none        &none       &none       &none          &none        &none            &kp K  &kp H              &kp COMMA          &kp PERIOD       &kp LS(FSLH)         &none
 &magic 5 0  &none               &none             &none           &none                      &lt 9 SPACE  &lt 10 TAB  &lt 11 ESC  &lt 12 DELETE  &lt 8 ENTER  &lt 7 BACKSPACE         &none              &none              &none            &none                &magic 5 0
             >;
         };
@@ -194,7 +194,7 @@
 &trans  &trans     &trans     &trans     &trans                                                                            &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans     &trans     &trans     &trans                                                         &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp PG_UP  &kp HOME   &kp UP     &kp END    &kp PAGE_UP                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp PAGE_DOWN                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F20    &kp LEFT   &kp DOWN   &kp RIGHT  &kp PAGE_DOWN                                                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(V)      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans     &trans     &trans                    &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
