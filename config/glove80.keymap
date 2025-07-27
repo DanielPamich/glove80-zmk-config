@@ -113,7 +113,7 @@
 
         jokeCombo {
             bindings = <&joke>;
-            key-positions = <8 9>;
+            key-positions = <9 7 69>;
             layers = <11>;
         };
     };
