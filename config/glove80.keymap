@@ -263,12 +263,12 @@
 
         layer_Mac_macros {
             bindings = <
-&trans  &trans                &trans          &trans             &trans                                                                                     &trans  &trans  &trans  &trans  &trans
-&trans  &trans                &trans          &trans             &trans                     &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LC(LS(O))         &trans          &trans             &trans                     &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LC(LS(C))         &kp LG(SPACE)   &kp LG(LA(C))      &kp LS(LA(LC(LG(SPACE))))  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LA(SINGLE_QUOTE)  &kp LC(PERIOD)  &kp LA(BACKSLASH)  &kp LG(T)                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                &trans          &trans             &trans                             &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans                &trans                  &trans             &trans                                                                                     &trans  &trans  &trans  &trans  &trans
+&trans  &trans                &trans                  &trans             &trans                     &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(LS(O))         &kp LA(LC(LEFT_ARROW))  &kp LA(LC(RET))    &kp LA(LC(RIGHT))          &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(LS(C))         &kp LG(SPACE)           &kp LG(LA(C))      &kp LS(LA(LC(LG(SPACE))))  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(SINGLE_QUOTE)  &kp LC(PERIOD)          &kp LA(BACKSLASH)  &kp LG(T)                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                &trans                  &trans             &trans                             &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
